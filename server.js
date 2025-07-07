@@ -20,7 +20,12 @@ if (!fs.existsSync(uploadsDir)) {
 
 
 // Autoriser CORS pour toutes les origines
-app.use(cors());
+app.use(cors({
+    origin: [
+        'http://localhost:3000',
+        'https://tool.teratany.org'
+    ]
+}));
 // Configuration multer
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
