@@ -23,7 +23,8 @@ if (!fs.existsSync(uploadsDir)) {
 app.use(cors({
     origin: [
         'http://localhost:3000',
-        'https://tool.teratany.org'
+        'https://tool.teratany.org',
+        'https://apk.teratany.org',
     ]
 }));
 // Configuration multer
