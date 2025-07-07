@@ -3,6 +3,7 @@ const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
 const crypto = require('crypto');
+const cors = require('cors');
 
 require('dotenv').config();
 
@@ -17,6 +18,9 @@ if (!fs.existsSync(uploadsDir)) {
     fs.mkdirSync(uploadsDir, { recursive: true });
 }
 
+
+// Autoriser CORS pour toutes les origines
+app.use(cors());
 // Configuration multer
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
