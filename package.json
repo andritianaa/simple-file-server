@@ -1,5 +1,5 @@
 {
-  "name": "file-server",
+  "name": "simple-file-server",
   "version": "1.0.0",
   "description": "Simple file server Node.js avec upload sécurisé",
   "main": "server.js",
@@ -15,7 +15,7 @@
     "upload",
     "multer"
   ],
-  "author": "Votre nom",
+  "author": "Andritiana Steve",
   "license": "MIT",
   "dependencies": {
     "express": "^4.18.2",
